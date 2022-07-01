@@ -31,7 +31,7 @@
 #### Recording Changes
 - git diff: to see changes between working directory and the index
   - --staged: changes between the index and last commit
-- git rm: to remote file from index and also working directory. 
+- git rm: to remove file from index and also working directory. 
   - -f: By default, the file being removed must be identical to the tip of the branch, and no updates to the contents can be staged in the index.
   - --cached: the staged content has to match either the tip of the branch or the file on disk, allowing the file being removed from just the index.
 - git mv: to rename files
