@@ -145,3 +145,16 @@
 > This operation works by going to the common ancestor of the two branches, getting the diff introduced by each commit of the branch you're on, saving those diffs to temporary files, resetting the current branch to the same commit you are rebasing onto, and finally applying each change in turn.
 
 - git rebase baseBranch topicBranch
+
+### Git on the Server   
+> a bare repository: a git repo that has no working directory. It's the contents of your project's `.git` directory and nothing else.
+- four protocols
+  - local
+  - http
+  - secure shell(SSH)
+  - git
+
+#### Create bare repository
+- git clone --bare \<your repo> \<bare repo>: to export an existing repo inot a new bare repo. By convention, bare repo directory names end with the suffix `.git`
+
+#### Putting the bare repo on a server
