@@ -6,6 +6,7 @@
 
 #### Auto install
 > wsl --install (using **administrator**)
+> wsl --install -d <distroName>
 
 #### Manually install
 1. enable windows subsystem for linux `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
@@ -18,7 +19,7 @@
 
 #### File storage
 - open wsl project in windows file explorer `explorer.exe .`
-- in WSL distribution command line to access windows file directory `/mnt/dirve/dir`
+- in WSL distribution command line to access windows file directory `/mnt/driver/dir`
 
 #### Set up vs code
 - get extension pack **Remote Development**
@@ -30,5 +31,13 @@
   - in vscode, open command palette `remote-wsl`
 
 
-#### Others
-  - wsl -l -v: to list all version
+#### Install node
+  - to install nvm `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/release version/install.sh | bash`
+  - to install lts version `nvm install --lts`
+
+#### Basic commands of WSL
+  - https://docs.microsoft.com/zh-cn/windows/wsl/basic-commands
+
+#### Troubleshooting
+  - [WSL2 common tips and tricks](https://blogs.subhamk.com/pages/wsl2.html)
+  - [change install dir using LxRunOffline](https://blog.csdn.net/farer_yyh/article/details/113785474)

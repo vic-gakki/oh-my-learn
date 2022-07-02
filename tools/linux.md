@@ -11,4 +11,7 @@
 - **ctrl + k**: delete forewards to the end
 
 - **ctrl + z**: send the application to the background and then use **fg** to get back into your application
+- **cd**
+  - cd -: change to the previous directory
+  - cd ~ + num: change to the num th previous directory
 
